@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Fish Company Quotation</title>
+    <meta name="description" content="Quotation from Pet Fish Company">
+    <meta name="author" content="Pet Fish Company">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body class="container mt-4">
+
+    <b>Pet Fish Company
+        <span style="float:right;font-size:30px;">
+            QUOTATION
+        </span>
+    </b>
+
+    <p>
+        123 Aqua Street
+        <br>Fishville, Ocean State
+        <span style="float:right;">
+            <img src="img/logo.webp" alt="Quote Icon" style="width:100px;height:100px;">
+        </span>
+        <br>Marine District 009
+    </p>
+
+    <p>ZIP: 10100</p>
+
+    <p id="bottom-line">
+        Phone: (123) 456-7890
+        <span class="tab">Mobile: (098) 765-4321</span>
+        <span style="float: right;">
+            <span id="currentDate">2025/06/29</span>
+        </span>
+    </p>
+
+    <p class="thick text-center">
+        Currency: USD
+        <span class="tab">No.: PFQ-000001</span>
+        <span style="float:left;">Page No. 1</span>
+    </p>
+
+    <p class="text-center">
+        Ship to: <span class="tab">Goldfish Supplies Ltd.</span>
+        <span style="float:left;">To: <span class="tab">Goldfish Supplies Ltd.</span></span>
+    </p>
+
+    <p class="text-center">
+        45 Coral Reef Road
+        <span style="float:left;"><span class="tab"></span>Fishpond Bay</span>
+        <br>
+        Aquarium City
+        <span style="float:left;"><span class="tab"></span>Bubble District</span>
+        <br>
+        Water Zone 8
+        <span style="float:left;"><span class="tab"></span>Seashore State</span>
+    </p>
+
+    <table class="table table-bordered text-center mt-4">
+        <thead class="thead-light">
+            <tr>
+                <th>Salesperson</th>
+                <th>Your P.O. No.</th>
+                <th>Date Shipped</th>
+                <th>Shipped Via</th>
+                <th>F.O.B Point</th>
+                <th>Terms</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Gill</td>
+                <td>PO-9998</td>
+                <td>2025/06/25</td>
+                <td>Fish Express</td>
+                <td>Sea Port A</td>
+                <td>Net 30 Days</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="my-3">
+        <button id="btnAdd" class="btn btn-success">Add Item</button>
+    </div>
+
+    <table class="table table-striped text-center">
+        <thead class="thead-dark">
+            <tr>
+                <th>Quantity</th>
+                <th>Description</th>
+                <th>Unit Price</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody id="dataTable">
+            <!-- Dynamic rows added by script2.js -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="text-right font-weight-bold">Subtotal</td>
+                <td><span id="subTotal">0.00</span></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p class="text-center mt-5">
+        <b>Make all checks payable to:</b><br>
+        <i>Pet Fish Company</i><br><br>
+        <b>If you have any questions concerning this invoice, contact:</b><br>
+        Email: support@petfishco.com | Tel: (123) 456-7890<br><br>
+        <b>THANK YOU FOR YOUR BUSINESS</b>
+    </p>
+
+    <footer class="text-center mt-5 mb-3">
+        &copy; 2025 Pet Fish Company
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Note</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Please double-check all quotation information before sending it to the customer.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
